@@ -8,7 +8,12 @@
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-
+  
+  <exec_depend>proy_robotanica_my_world</exec_depend>
+  <exec_depend>proy_robotanica_my_slam</exec_depend>
+  <exec_depend>proy_robotanica_nav_punto</exec_depend> 
+  <exec_depend>proy_robotanica_custom_interface</exec_depend> 
+  
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
