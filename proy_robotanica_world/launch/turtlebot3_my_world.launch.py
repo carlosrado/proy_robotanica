@@ -26,13 +26,13 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
-    pkg_share = FindPackageShare(package='proy_robotanica_my_world').find('proy_robotanica_my_world')
+    pkg_share = FindPackageShare(package='my_world').find('my_world')
     gazebo_models_path = os.path.join(pkg_share, 'models')
     os.environ["GAZEBO_MODEL_PATH"] = gazebo_models_path
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
     world_file_name = 'burger.model'
 
-    world = os.path.join(get_package_share_directory('proy_robotanica_my_world'),
+    world = os.path.join(get_package_share_directory('my_world'),
                          'world', world_file_name)
     launch_file_dir = os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch')
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
